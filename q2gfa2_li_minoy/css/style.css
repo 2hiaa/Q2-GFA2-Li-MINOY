@@ -1,0 +1,90 @@
+*{margin:0;
+background-color: black;}
+header{visibility: hidden;}
+section{
+    width:100vw;
+    height:100vh;
+
+}
+
+.hbodies{
+    display: inline-block;
+    background-position: center! important;
+    background-repeat: no-repeat! important;
+    background-size: cover! important;
+}
+#LoverWorld{
+    background: url(/media/Loverworld.gif);
+    width:300px;
+    height:300px;
+    transition: 50s;
+    transform: translate(45vw, 40vh);
+    animation-name: LWanimation;
+    animation-duration: 30s;
+    margin: 10px;
+    padding: 10px;
+}
+
+#MidnightsWorld{
+    background: url(/media/MidnightsWorld.gif);
+    width:300px;
+    height:300px;
+    transform: translate(10vw, 10vh);
+    transition: 100s;
+    animation-name: MWanimation;
+    animation-duration: 30s;
+    margin: 10px;
+    padding: 10px;
+}
+
+#LoverStar{
+    background: url(/media/Loverstar.gif);
+    width:50px;
+    height:50px;
+    float: left;
+    animation-name: Lovstaranimation;
+    animation-duration: 30s;
+    transform: translate(35vw, 10vh);
+
+}
+
+#MidnightStar{
+    background: url(/media/midnightstars.gif);
+    width:50px;
+    height:50px;
+    animation-name: Midstar;
+    animation-duration: 30s;
+    transform: translate(33vw, 33vh);
+}
+
+
+
+
+@keyframes LWanimation{
+    from {transform: translate(40vw, 0vh) scale(0.1);}
+    50% {transform: translate(10vw, 10vh)scale(0.5);}
+    100% {transform: translate(45vw, 40vh)scale(1)rotate3d(90deg);}
+}
+
+@keyframes MWanimation{
+    from{transform: translate(40vw, 0vh)scale(0.1);}
+    50% {transform: translate(45vw, 40vh)scale(0.5);}
+    100% {transform: translate(10vw,10vh)scale(1)rotate3d(90deg);}
+
+}
+
+@keyframes Lovstaranimation{
+    from{transform: translate(0vw,0vh)scale(0.1);}
+    50% {transform: translate(30vw, 30vh)scale(0.5) ;}
+    100% {transform: translate(35vw, 10vh)scale(1)matrix3d(3.0);}
+}
+
+@keyframes Midstar{
+    from{transform: translate(50vw,0vh)scale(0.1)}
+    50% {transform: translate(25vw, 30vh)scale(0.5) ;}
+    100% {transform: translate(33vw, 33vh)scale(1)matrix3d(3.0);}
+}
+
+
+
+
